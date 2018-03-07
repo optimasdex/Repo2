@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel = "none">
+	<parameter name = "Stest1" value ="dummytest1"/>
+	<parameter name = "Stest2" value ="dummytest2"/>
+	<!--parameter name = "Browsers" value = "chrome"/-->
+	<!--parameter name = "Browsers" value = "firefox"/-->
+	
+	<test name="parametertest-iexplorer">
+	<parameter name = "Browsers" value = "chrome"/>
+		<groups>
+			<run>
+				<include name="Grouping1" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name = "SeleniumSession1.Mouseactions" />
+			<class name = "SeleniumSession1.Asserttests"/>
+		</classes>
+	</test>
+	<!-- 
+	<test name="parametertest-firefox">
+	<parameter name = "Browsers" value = "firefox"/>
+		<groups>
+			<run>
+				<include name="Grouping3" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name = "SeleniumSession1.Mouseactions" />
+			<class name = "SeleniumSession1.Asserttests"/>
+		</classes>
+	</test>-->
+</suite>

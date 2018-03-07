@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="Stest1" value="dummytest1"/>
+  <parameter name="Stest2" value="dummytest2"/>
+  <test name="parametertest-iexplorer(failed)">
+    <parameter name="Browsers" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Grouping1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SeleniumSession1.Mouseactions">
+        <methods>
+          <include name="draganddrop"/>
+          <include name="Open"/>
+          <include name="slider"/>
+          <include name="close"/>
+          <include name="accordion"/>
+        </methods>
+      </class> <!-- SeleniumSession1.Mouseactions -->
+    </classes>
+  </test> <!-- parametertest-iexplorer(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
