@@ -7,7 +7,7 @@
 	<!--parameter name = "Browsers" value = "firefox"/-->
 	
 	<test name="parametertest-iexplorer">
-	<parameter name = "Browsers" value = "chrome"/>
+	<parameter name = "Browsers" value = "firefox"/>
 		<groups>
 			<run>
 				<include name="Grouping1" />
